@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".EatActivity">
+
+    <RadioGroup
+        android:id="@+id/radio_group_eat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radio_minus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="체중감량 선택" />
+
+        <RadioButton
+            android:id="@+id/radio_keep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="체중유지 선택" />
+
+        <RadioButton
+            android:id="@+id/radio_plus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="체중증량 선택" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edit_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="현재 체중을 입력해주세요."
+        android:inputType="number"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/button_eat_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="계산하기"
+        />
+
+    <TextView
+        android:id="@+id/text_invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/text_invisible2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+</LinearLayout>

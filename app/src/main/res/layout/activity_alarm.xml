@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmActivity">
+
+    <TextView
+        android:id="@+id/text_alarm_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="알림 기능을 사용하시겠습니까?"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="101dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_alarm_1"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radio_alarm_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="알림 켜기" />
+
+        <RadioButton
+            android:id="@+id/radio_alarm_off"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="알림 끄기" />
+    </RadioGroup>
+
+    <!--<TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="270dp"
+        android:layout_height="130dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/text_alarm_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1"
+        app:layout_constraintVertical_chainStyle="packed" />-->
+
+    <TextView
+        android:id="@+id/text_alarm_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="사용하고자 하는 알림의 종류를 선택해주세요."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox_alarm_walk"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:text="08:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_alarm_3"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox_alarm_walk2"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:text="13:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_alarm_walk"
+        app:layout_constraintTop_toBottomOf="@+id/text_alarm_3"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox_alarm_walk3"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:text="19:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_alarm_walk2"
+        app:layout_constraintTop_toBottomOf="@+id/text_alarm_3"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox_alarm_walk4"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:text="23:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_alarm_walk3"
+        app:layout_constraintTop_toBottomOf="@+id/text_alarm_3"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox_alarm_eat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:30"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_alarm_eat"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_alarm_walk2"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox_alarm_fur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_alarm_brush"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox_alarm_brush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="08:30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_alarm_eat"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_fur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="빗질 알림 - "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox_alarm_eat"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_eat"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <CheckBox
+        android:id="@+id/checkBox_alarm_fur2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14:00"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_alarm_fur"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_alarm_brush2"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox_alarm_eat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="07:30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_alarm_walk"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox_alarm_fur4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="24:00"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_alarm_fur3"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_alarm_walk4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_brush"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:text="양치 알림 - "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox_alarm_eat"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_alarm_3"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <CheckBox
+        android:id="@+id/checkBox_alarm_brush2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13:30"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_alarm_brush"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_alarm_eat2"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox_alarm_eat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18:30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_alarm_eat2"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_alarm_walk3"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox_alarm_brush3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="19:30"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_alarm_brush2"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_alarm_eat3"
+        tools:ignore="MissingConstraints" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox_alarm_fur3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20:00"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_alarm_fur2"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_alarm_brush3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_eat"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:text="식사 알림 - "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox_alarm_eat"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_brush"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <TextView
+        android:id="@+id/text_alarm_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(기본설정은 전부 꺼져 있습니다. 원하는 종류의 알림 켜주세요.)"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_alarm_2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_alarm_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="확인"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_walk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="산책 알림 - "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox_alarm_walk"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_alarm_3"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <TextView
+        android:id="@+id/cus_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="설정하고 싶은 알림의 시간을 설정해주세요!"
+        app:layout_constraintBottom_toTopOf="@+id/CusTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_alarm_fur2" />
+
+    <EditText
+        android:id="@+id/CusTime"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="80dp"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="개인적으로 사용할 알림 설정"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_alarm_on"
+        tools:layout_editor_absoluteX="-11dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
